@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v.1/students")
 public class StudentsController {
-    private StudentService studentService;
+    private final StudentService studentService;
 
     public StudentsController(StudentService studentService) {
         this.studentService = studentService;
